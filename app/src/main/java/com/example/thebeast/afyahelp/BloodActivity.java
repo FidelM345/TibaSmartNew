@@ -56,6 +56,7 @@ public class BloodActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Blood Donors");
 
+
         bloglist = new ArrayList<>();
         userlist=new ArrayList<>();
 
@@ -166,6 +167,10 @@ public class BloodActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+
+        if (id == android.R.id.home) {
+            onBackPressed();
+        }
         //noinspection SimplifiableIfStatement
         if (id == R.id.group_all) {
             //displays all blood donors

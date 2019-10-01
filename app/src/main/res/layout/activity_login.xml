@@ -8,7 +8,6 @@
     android:layout_height="match_parent">
 
     <android.widget.LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:background="@color/colorPrimary"
@@ -19,14 +18,13 @@
         <de.hdodenhof.circleimageview.CircleImageView
 
             android:id="@+id/profile_image"
-            android:layout_marginTop="24dp"
             android:layout_width="164dp"
             android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
             android:layout_weight="2"
             android:scaleType="centerCrop"
-            android:src="@drawable/appicon"
-            />
+            android:src="@drawable/firstaidnew" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -34,7 +32,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:layout_weight="1"
-            android:text="Smart First Aid"
+            android:text="TibaSmart"
             android:textColor="@android:color/background_light"
 
             android:textSize="32sp"

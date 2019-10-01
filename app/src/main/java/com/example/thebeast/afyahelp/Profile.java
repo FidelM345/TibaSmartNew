@@ -58,7 +58,7 @@ import id.zelory.compressor.Compressor;
 
 
 
- class Profile extends AppCompatActivity implements View.OnClickListener,DatePickerDialog.OnDateSetListener{
+ public class Profile extends AppCompatActivity implements View.OnClickListener,DatePickerDialog.OnDateSetListener{
 
     StorageReference mstorageReference;
     FirebaseAuth mAuth;
