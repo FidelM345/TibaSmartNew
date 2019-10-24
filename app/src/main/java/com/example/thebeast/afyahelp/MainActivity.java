@@ -253,16 +253,15 @@ public class MainActivity extends AppCompatActivity
 
 
            // currentPost=0;
-         /*   Intent intent=new Intent(MainActivity.this,Forum_page.class);
+            Intent intent=new Intent(MainActivity.this,Forum_page.class);
             startActivity(intent);
-*/
 
 
 
         } else if (id == R.id.nav_nearby_hospital) {
 
-      /*      Intent intent=new Intent(MainActivity.this,MapsActivity.class);
-            startActivity(intent);*/
+            Intent intent=new Intent(MainActivity.this,MapsActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_profile) {
             Intent intent=new Intent(MainActivity.this,MyAccount.class);
@@ -276,8 +275,8 @@ public class MainActivity extends AppCompatActivity
             finish();
 
         } else if (id == R.id.nav_alerts) {
-            /*Intent intent=new Intent(MainActivity.this,ViewAlerts.class);
-            startActivity(intent);*/
+            Intent intent=new Intent(MainActivity.this,ViewAlerts.class);
+            startActivity(intent);
 
 
         }else if (id == R.id.nav_ambulance) {
@@ -291,8 +290,8 @@ public class MainActivity extends AppCompatActivity
         }else if (id == R.id.nav_first_aid_kit) {
             Intent intent=new Intent(MainActivity.this,FirstAid_Kit.class);
             startActivity(intent);
-          /*   Intent intent=new Intent(MainActivity.this,DirectionsApi.class);
-             startActivity(intent);*/
+             /*Intent intent2=new Intent(MainActivity.this,DirectionsApi.class);
+             startActivity(intent2);*/
         }
 
 
@@ -371,7 +370,7 @@ public class MainActivity extends AppCompatActivity
     public void onClick(View v) {
 
         switch (v.getId()){
-            /*case R.id.Circulatory_card:
+            case R.id.Circulatory_card:
                 Intent i=new Intent(getApplicationContext(),Circulatory_Problem.class);
                 startActivity(i);
 
@@ -385,7 +384,7 @@ public class MainActivity extends AppCompatActivity
                 Intent in1=new Intent(getApplicationContext(),Poison_main.class);
                 startActivity(in1);
 
-                break;*/
+                break;
 
             case R.id.Stings_card:
                 Intent in2=new Intent(getApplicationContext(),Bites_problem.class);
@@ -398,7 +397,7 @@ public class MainActivity extends AppCompatActivity
                 startActivity(in3);
 
                 break;
-           /* case R.id.Heat_card:
+            case R.id.Heat_card:
                 Intent in4=new Intent(getApplicationContext(),Heat_main.class);
                 startActivity(in4);
 
@@ -408,7 +407,7 @@ public class MainActivity extends AppCompatActivity
                 Intent in5=new Intent(getApplicationContext(),Head_main.class);
                 startActivity(in5);
 
-                break;*/
+                break;
 
             case R.id.CPR_card:
                 Intent in6=new Intent(getApplicationContext(),Cpr_main.class);

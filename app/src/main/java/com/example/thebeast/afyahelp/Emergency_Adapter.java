@@ -133,6 +133,37 @@ public Emergency_Adapter(List<EmergencyLines_model> bloglist) {
 
                     }
 
+                }else{
+                    AlertDialog.Builder builder1 = new AlertDialog.Builder(context);
+                    builder1.setTitle("Make call");
+                    builder1.setMessage("Are you sure you want to make the call");
+                    builder1.setCancelable(true);
+                    builder1.setIcon(R.mipmap.call_icon);
+
+                    builder1.setPositiveButton(
+                            "Yes",
+                            new DialogInterface.OnClickListener() {
+                                @SuppressLint("MissingPermission")
+                                public void onClick(DialogInterface dialog, int id) {
+                                    String dial="tel:"+mobileno;
+                                    context.startActivity(new Intent(Intent.ACTION_CALL, Uri.parse(dial)));
+
+                                }
+                            });
+
+                    builder1.setNegativeButton(
+                            "No",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    dialog.cancel();
+                                }
+                            });
+
+                    AlertDialog alert11 = builder1.create();
+                    alert11.show();
+
+
+
                 }
             }
         });

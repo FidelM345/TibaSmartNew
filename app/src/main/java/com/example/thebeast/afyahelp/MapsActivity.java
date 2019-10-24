@@ -169,10 +169,21 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private void nearByPlace(final String placeType) {
         mMap.clear();
-        latitude=mLastLocation.getLatitude();
-        longitude=mLastLocation.getLongitude();
 
-        LatLng latLng=new LatLng(latitude,longitude);
+        try {
+
+           // latitude=mLastLocation.getLatitude();
+            latitude=-1.308869;
+           // longitude=mLastLocation.getLongitude();
+            longitude=36.809883;
+
+        }catch (Exception e){
+
+            Toast.makeText(this, "Please ensure your gps is working", Toast.LENGTH_SHORT).show();
+        }
+
+
+        LatLng latLng=new LatLng(-1.308869,36.809883);
         myLocation=new MarkerOptions()
                 .position(latLng)
                 .title("your position")
@@ -186,7 +197,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
 
-        final String url=getUrl(latitude,longitude,placeType);
+        final String url=getUrl(-1.308869,36.809883,placeType);
 
         mService.getNearByPlaces(url)
                 .enqueue(new Callback<Myplaces>() {
@@ -334,6 +345,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
     private String getUrl(double latitude, double longitude, String placeType) {
+        Log.i("turkey", "turkey location: "+latitude);
 
         StringBuilder googlePlacesUri=new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
         googlePlacesUri.append("location="+latitude+","+longitude);
@@ -532,9 +544,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
             }
 
-
         }
-
 
 
         return true;
@@ -609,8 +619,11 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
         com.google.android.gms.maps.model.LatLng origin = new com.google.android.gms.maps.model.LatLng(
-                mLastLocation.getLatitude(),
-                mLastLocation.getLongitude()
+                -1.308869
+              /*mLastLocation.getLatitude()*/,
+                36.809883
+
+               /* mLastLocation.getLongitude()*/
 
         );
 

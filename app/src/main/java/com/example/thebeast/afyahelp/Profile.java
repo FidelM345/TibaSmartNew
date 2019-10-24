@@ -205,10 +205,8 @@ import id.zelory.compressor.Compressor;
                                     String exception=task.getException().getMessage();
                                     Toast.makeText(Profile.this, "Image Upload Error is: "+exception, Toast.LENGTH_LONG).show();
                                 }
-
                             }
                         });
-
 
                     }else {
                         Toast.makeText(Profile.this, "Ensure all fields have been filled", Toast.LENGTH_LONG).show();
@@ -216,7 +214,6 @@ import id.zelory.compressor.Compressor;
 
                 }else {
                     Toast.makeText(Profile.this, "Please select image first by clicking image icon above to setup your account", Toast.LENGTH_LONG).show();
-
 
                 }
              break;
