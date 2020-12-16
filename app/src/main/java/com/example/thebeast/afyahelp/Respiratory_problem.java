@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-import com.example.thebeast.afyahelp.cpr.CustomAdapter;
+
 import com.example.thebeast.afyahelp.respiratory.Adult_Chock;
 import com.example.thebeast.afyahelp.respiratory.Asthma;
 import com.example.thebeast.afyahelp.respiratory.Chest_wound;

@@ -10,7 +10,7 @@ import android.widget.ListView;
 
 import com.example.thebeast.afyahelp.cpr.Adult_cpr;
 import com.example.thebeast.afyahelp.cpr.Child_cpr;
-import com.example.thebeast.afyahelp.cpr.CustomAdapter;
+import com.example.thebeast.afyahelp.cpr.General_cpr;
 import com.example.thebeast.afyahelp.cpr.Infant_cpr;
 import com.example.thebeast.afyahelp.cpr.Recovery_position;
 import com.example.thebeast.afyahelp.respiratory.Adult_Chock;
@@ -87,7 +87,7 @@ public class Quick_access extends AppCompatActivity {
 
                 if(number==0){
 
-                    Intent i=new Intent(getApplicationContext(),General_cpr.class);
+                    Intent i=new Intent(getApplicationContext(), General_cpr.class);
                     startActivity(i);
                 }else
                 if(number==1){

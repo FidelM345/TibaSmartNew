@@ -1,4 +1,4 @@
-#Wed Dec 16 19:09:08 EET 2020
+#Wed Dec 16 19:24:18 EET 2020
 base.0=/home/thebeast/AndroidStudioProjects/TibaSmartNew2/app/build/intermediates/transforms/dexMerger/debug/0
 path.1=classes2.dex
 renamed.1=classes2.dex

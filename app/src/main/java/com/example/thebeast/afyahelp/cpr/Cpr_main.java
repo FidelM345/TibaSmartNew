@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-import com.example.thebeast.afyahelp.General_cpr;
 import com.example.thebeast.afyahelp.MainActivity;
 import com.example.thebeast.afyahelp.R;
 

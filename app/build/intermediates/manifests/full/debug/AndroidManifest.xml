@@ -81,20 +81,20 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="com.example.thebeast.afyahelp.DriverMapsActivity"
+            android:name="com.example.thebeast.afyahelp.maps_and_location.DriverMapsActivity"
             android:label="@string/title_activity_driver_maps" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.thebeast.afyahelp.MainActivity" />
         </activity>
         <activity
-            android:name="com.example.thebeast.afyahelp.MapsActivity"
+            android:name="com.example.thebeast.afyahelp.maps_and_location.MapsActivity"
             android:label="@string/title_activity_maps" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.thebeast.afyahelp.MainActivity" />
         </activity>
-        <activity android:name="com.example.thebeast.afyahelp.Locationme" />
+        <activity android:name="com.example.thebeast.afyahelp.maps_and_location.Locationme" />
         <activity
             android:name="com.example.thebeast.afyahelp.emergencylines.EmergencyLines"
             android:parentActivityName="com.example.thebeast.afyahelp.MainActivity" >
@@ -111,7 +111,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.thebeast.afyahelp.emergencylines.EmergencyLine_View" />
         </activity>
-        <activity android:name="com.example.thebeast.afyahelp.Gpslocation" />
+        <activity android:name="com.example.thebeast.afyahelp.maps_and_location.Gpslocation" />
         <activity android:name="com.example.thebeast.afyahelp.myaccount.Edit_Account" />
         <activity android:name="com.example.thebeast.afyahelp.Respiratory_problem" />
         <activity android:name="com.example.thebeast.afyahelp.respiratory.Adult_Chock" />
@@ -119,8 +119,8 @@
         <activity android:name="com.example.thebeast.afyahelp.respiratory.Chest_wound" />
         <activity android:name="com.example.thebeast.afyahelp.respiratory.Asthma" />
         <activity android:name="com.example.thebeast.afyahelp.respiratory.Fume_inhalation" />
-        <activity android:name="com.example.thebeast.afyahelp.Cpr_main" />
-        <activity android:name="com.example.thebeast.afyahelp.General_cpr" />
+        <activity android:name="com.example.thebeast.afyahelp.cpr.Cpr_main" />
+        <activity android:name="com.example.thebeast.afyahelp.cpr.General_cpr" />
         <activity android:name="com.example.thebeast.afyahelp.cpr.Adult_cpr" />
         <activity android:name="com.example.thebeast.afyahelp.cpr.Child_cpr" />
         <activity android:name="com.example.thebeast.afyahelp.cpr.Infant_cpr" />
@@ -135,7 +135,7 @@
         </activity>
         <activity android:name="com.example.thebeast.afyahelp.Quick_access" />
         <activity
-            android:name="com.example.thebeast.afyahelp.DirectionsApi"
+            android:name="com.example.thebeast.afyahelp.maps_and_location.DirectionsApi"
             android:label="@string/title_activity_directions_api" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

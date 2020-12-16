@@ -96,7 +96,7 @@
         <activity android:name=".respiratory.Asthma" />
         <activity android:name=".respiratory.Fume_inhalation" />
         <activity android:name=".cpr.Cpr_main" />
-        <activity android:name=".General_cpr" />
+        <activity android:name=".cpr.General_cpr" />
         <activity android:name=".cpr.Adult_cpr" />
         <activity android:name=".cpr.Child_cpr" />
         <activity android:name=".cpr.Infant_cpr" />
