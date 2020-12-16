@@ -12,7 +12,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.google.android.youtube.player.YouTubeStandalonePlayer;
+import com.example.thebeast.afyahelp.cpr.Cpr_main;
+import com.example.thebeast.afyahelp.emergencylines.EmergencyLines;
 
 import java.util.Locale;
 
@@ -42,7 +43,7 @@ public class General_cpr extends AppCompatActivity implements TextToSpeech.OnIni
             @Override
             public void onClick(View v) {
 
-                Intent in=new Intent(getApplicationContext(),Cpr_main.class);
+                Intent in=new Intent(getApplicationContext(), Cpr_main.class);
                 startActivity(in);
 
             }
@@ -55,7 +56,7 @@ public class General_cpr extends AppCompatActivity implements TextToSpeech.OnIni
             @Override
             public void onClick(View v) {
 
-                Intent in=new Intent(getApplicationContext(),EmergencyLines.class);
+                Intent in=new Intent(getApplicationContext(), EmergencyLines.class);
                 startActivity(in);
 
             }

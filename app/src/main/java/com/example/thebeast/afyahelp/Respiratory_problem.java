@@ -9,6 +9,13 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
+import com.example.thebeast.afyahelp.cpr.CustomAdapter;
+import com.example.thebeast.afyahelp.respiratory.Adult_Chock;
+import com.example.thebeast.afyahelp.respiratory.Asthma;
+import com.example.thebeast.afyahelp.respiratory.Chest_wound;
+import com.example.thebeast.afyahelp.respiratory.Child_chock;
+import com.example.thebeast.afyahelp.respiratory.Fume_inhalation;
+
 public class Respiratory_problem extends AppCompatActivity {
 
     ListView listView;
@@ -54,27 +61,27 @@ public class Respiratory_problem extends AppCompatActivity {
 
                 if(number==0){
 
-                    Intent i=new Intent(getApplicationContext(),Adult_Chock.class);
+                    Intent i=new Intent(getApplicationContext(), Adult_Chock.class);
                     startActivity(i);
                 }
                 if(number==1){
 
-                    Intent i=new Intent(getApplicationContext(),Child_chock.class);
+                    Intent i=new Intent(getApplicationContext(), Child_chock.class);
                     startActivity(i);
                 }
                 if(number==2){
 
-                    Intent i=new Intent(getApplicationContext(),Chest_wound.class);
+                    Intent i=new Intent(getApplicationContext(), Chest_wound.class);
                     startActivity(i);
                 }
                 if(number==3){
 
-                    Intent i=new Intent(getApplicationContext(),Asthma.class);
+                    Intent i=new Intent(getApplicationContext(), Asthma.class);
                     startActivity(i);
                 }
                 if(number==4){
 
-                    Intent i=new Intent(getApplicationContext(),Fume_inhalation.class);
+                    Intent i=new Intent(getApplicationContext(), Fume_inhalation.class);
                     startActivity(i);
                 }
 

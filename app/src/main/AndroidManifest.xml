@@ -36,27 +36,14 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-        <activity android:name=".Login" />
+        <activity android:name=".myaccount.Login" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Register" />
-        <activity android:name=".Profile" />
-        <activity android:name=".Forum_post" />
-        <activity android:name=".Forum_page" />
-        <activity android:name=".comment" />
-        <activity android:name=".Donor_Registration" />
-        <activity
-            android:name=".BloodActivity"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.thebeast.afyahelp.MainActivity" />
-        </activity>
-        <activity android:name=".GalleryActivity" />
-        <activity android:name=".MyAccount" />
-        <activity android:name=".ViewAlerts" />
+        <activity android:name=".myaccount.Register" />
+        <activity android:name=".myaccount.Profile" />
+        <activity android:name=".myaccount.MyAccount" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -70,89 +57,51 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".DriverMapsActivity"
+            android:name=".maps_and_location.DriverMapsActivity"
             android:label="@string/title_activity_driver_maps">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.thebeast.afyahelp.MainActivity" />
         </activity>
         <activity
-            android:name=".MapsActivity"
+            android:name=".maps_and_location.MapsActivity"
             android:label="@string/title_activity_maps">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.thebeast.afyahelp.MainActivity" />
         </activity>
-        <activity android:name=".Locationme" />
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".Alert_Read" />
-        <activity android:name=".Circulatory_Problem" />
-        <activity android:name=".Heart_Attack" />
-        <activity android:name=".Agina" />
-        <activity android:name=".Fainting" />
-        <activity android:name=".Shock" />
+        <activity android:name=".maps_and_location.Locationme" />
         <activity
-            android:name=".EmergencyLines"
+            android:name=".emergencylines.EmergencyLines"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.thebeast.afyahelp.MainActivity" />
         </activity>
-        <activity android:name=".EmergencyLine_View" />
+        <activity android:name=".emergencylines.EmergencyLine_View" />
         <activity
-            android:name=".Ambulance_Location"
+            android:name=".emergencylines.Ambulance_Location"
             android:label="@string/title_activity_ambulance__location"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.thebeast.afyahelp.EmergencyLine_View" />
+                android:value="com.example.thebeast.afyahelp.emergencylines.EmergencyLine_View" />
         </activity>
-        <activity android:name=".Gpslocation" />
-        <activity android:name=".Web_View" />
-        <activity android:name=".FirstAidWeb" />
-        <activity android:name=".Edit_Account" />
-        <activity
-            android:name=".StreetView"
-            android:label="@string/title_activity_street_view" />
+        <activity android:name=".maps_and_location.Gpslocation" />
+        <activity android:name=".myaccount.Edit_Account" />
         <activity android:name=".Respiratory_problem" />
-        <activity android:name=".Adult_Chock" />
-        <activity android:name=".Child_chock" />
-        <activity android:name=".Chest_wound" />
-        <activity android:name=".Asthma" />
-        <activity android:name=".Fume_inhalation" />
-        <activity android:name=".Poison_main" />
-        <activity android:name=".Food_poisoning" />
-        <activity android:name=".Swallowed_poison" />
-        <activity android:name=".Alcohol_poisoning" />
-        <activity android:name=".Bites_problem" />
-        <activity android:name=".Snake_bite" />
-        <activity android:name=".Spider_bite" />
-        <activity android:name=".Bee_sting" />
-        <activity android:name=".Jelly_sting" />
-        <activity android:name=".Dog_bite" />
-        <activity android:name=".Bleeding_main" />
-        <activity android:name=".Eye_injury" />
-        <activity android:name=".Bruising" />
-        <activity android:name=".Ear_injury" />
-        <activity android:name=".Heat_main" />
-        <activity android:name=".Burn_scalds" />
-        <activity android:name=".Electrical_burns" />
-        <activity android:name=".Chemical_burns" />
-        <activity android:name=".Surn_burn" />
-        <activity android:name=".Hypothermia" />
-        <activity android:name=".Head_main" />
-        <activity android:name=".Seizure" />
-        <activity android:name=".Stroke" />
-        <activity android:name=".Cerebral_compression" />
-        <activity android:name=".Cpr_main" />
+        <activity android:name=".respiratory.Adult_Chock" />
+        <activity android:name=".respiratory.Child_chock" />
+        <activity android:name=".respiratory.Chest_wound" />
+        <activity android:name=".respiratory.Asthma" />
+        <activity android:name=".respiratory.Fume_inhalation" />
+        <activity android:name=".cpr.Cpr_main" />
         <activity android:name=".General_cpr" />
-        <activity android:name=".Adult_cpr" />
-        <activity android:name=".Child_cpr" />
-        <activity android:name=".Infant_cpr" />
-        <activity android:name=".Recovery_position" />
-        <activity android:name=".Password_reset" />
-        <activity android:name=".FirstAid_Kit" />
-        <activity android:name=".Scissors" />
+        <activity android:name=".cpr.Adult_cpr" />
+        <activity android:name=".cpr.Child_cpr" />
+        <activity android:name=".cpr.Infant_cpr" />
+        <activity android:name=".cpr.Recovery_position" />
+        <activity android:name=".myaccount.Password_reset" />
         <activity android:name=".Splash_screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -161,9 +110,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Quick_access" />
-        <activity android:name=".Edit_Forum_post" />
         <activity
-            android:name=".DirectionsApi"
+            android:name=".maps_and_location.DirectionsApi"
             android:label="@string/title_activity_directions_api">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
